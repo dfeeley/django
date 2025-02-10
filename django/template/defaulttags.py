@@ -1204,7 +1204,7 @@ def querystring(context, query_dict=None, **kwargs):
         else:
             query_dict[key] = value
     if not query_dict:
-        return ""
+        return "?"
     query_string = query_dict.urlencode()
     return f"?{query_string}"
 
